@@ -5,12 +5,19 @@ body {
 	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 }
 
+@keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
 .nav {
 	width: 100%;
 	padding: 30px;
 	font-weight: 900;
 	background-color: #6001FF;
-	color: #F644B9;
+	animation-name: example;
+    animation-duration: 4s;
 }
 
 .container {
